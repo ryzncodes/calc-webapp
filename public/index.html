@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple Calculator and Email Submission</title>
+		<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<!-- Calculator Section -->
+		<section id="calculator-section">
+			<h2>Calculator</h2>
+			<form id="calculator-form">
+				<label for="input1">Input 1:</label>
+				<input type="number" id="input1" name="input1" required />
+
+				<label for="input2">Input 2:</label>
+				<input type="number" id="input2" name="input2" required />
+
+				<label for="input3">Input 3:</label>
+				<input type="number" id="input3" name="input3" required />
+
+				<label for="input4">Input 4:</label>
+				<input type="number" id="input4" name="input4" required />
+
+				<label for="input5">Input 5:</label>
+				<input type="number" id="input5" name="input5" required />
+
+				<button type="submit" id="calculate-btn">Calculate</button>
+			</form>
+
+			<!-- Results Section -->
+			<div id="results">
+				<p>Output 1: <span id="output1">0</span></p>
+				<p>Output 2: <span id="output2">0</span></p>
+			</div>
+		</section>
+
+		<!-- Email Submission Section -->
+		<section id="email-submission-section">
+			<h2>Subscribe to Our Newsletter</h2>
+			<form id="email-form">
+				<label for="email">Enter your email:</label>
+				<input type="email" id="email" name="email" required />
+
+				<button type="submit" id="submit-email-btn">Submit</button>
+			</form>
+		</section>
+
+		<!-- Linking external JavaScript files -->
+		<script src="js/calculator.js"></script>
+		<script src="js/email.js"></script>
+	</body>
+</html>
